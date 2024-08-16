@@ -5,9 +5,9 @@ public class Main {
         boss.setBossHealth(1000);
         boss.setBossDefence("Physical");
         System.out.println("Boss HP: " + boss.getBossHealth() + " Boss Damage: " + boss.getBossDamage() + " Boss Defence: " + boss.getBossDefence());
-        createHeroes();
-        for (int i = 0; i < createHeroes().length; i++) {
-            System.out.println("Hero " + (i+1) + " Ability: " + createHeroes()[i].getHeroAbility()+ " Damage: " + createHeroes()[i].getHeroDamage() + " Health: " + createHeroes()[i].getHeroHealth());
+        Hero[] heroes = createHeroes();
+        for (int i = 0; i < heroes.length; i++) {
+            System.out.println("Hero " + (i+1) + " Ability: " + heroes[i].getHeroAbility()+ " Damage: " + heroes[i].getHeroDamage() + " Health: " + heroes[i].getHeroHealth());
         }
 
 
